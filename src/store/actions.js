@@ -1,0 +1,1 @@
+/* Ponto de entrada das chamadas da API */
