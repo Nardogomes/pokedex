@@ -23,5 +23,17 @@ export default {
     state.isPokemonSearch = false;
     state.listHasError = false;
     state.searchHasError = false;
+  },
+  setPokemonSearched(pokemon) {
+    state.list = [pokemon];
+  },
+  setIsSearch(flag) {
+    state.isSearching = flag;
+  },
+  setIsPokemonSearch(flag) {
+    state.isPokemonSearch = flag;
+  },
+  setSearchHasError(flag) {
+    state.searchHasError = flag;
   }
 }
