@@ -27,7 +27,7 @@ export default {
   setPokemonSearched(pokemon) {
     state.list = [pokemon];
   },
-  setIsSearch(flag) {
+  setIsSearching(flag) {
     state.isSearching = flag;
   },
   setIsPokemonSearch(flag) {

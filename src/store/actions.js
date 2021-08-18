@@ -39,7 +39,7 @@ export default {
     }
   },
   async getPokemonByName(name) {
-    const { setIsPokemonSearched } = mutations;
+    const { setPokemonSearched } = mutations;
 
     const pokemon = await PokeAPI.getPokemonByName(name);
 
@@ -66,7 +66,7 @@ export default {
       setIsSearching(true);
       setIsPokemonSearch(true);
 
-      const pokemon = state.list.find(info => info.name.toLowerCase() === name.toLowerCase());
+      const pokemon = state.tmpList.find(info => info.name.toLowerCase() === name.toLowerCase());
 
       if(pokemon) {
         setPokemonSearched(pokemon);
