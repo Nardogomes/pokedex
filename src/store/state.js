@@ -16,5 +16,7 @@ export default Vue.observable({
   searchHasError: false,
 
   limit: LIMIT,
-  offset: OFFSET
+  offset: OFFSET,
+
+  pokemonId: null
 });
