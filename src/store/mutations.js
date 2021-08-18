@@ -23,6 +23,7 @@ export default {
     state.isPokemonSearch = false;
     state.listHasError = false;
     state.searchHasError = false;
+    state.pokemonId = null;
   },
   setPokemonSearched(pokemon) {
     state.list = [pokemon];
@@ -35,5 +36,9 @@ export default {
   },
   setSearchHasError(flag) {
     state.searchHasError = flag;
+  },
+  setPokemonId(id = null) {
+    state.isPokemonSearch = false;
+    state.pokemonId = id;
   }
 }
