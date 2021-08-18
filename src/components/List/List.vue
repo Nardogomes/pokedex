@@ -21,7 +21,7 @@ export default {
 		ListItem
 	},
 	computed: {
-		pokemonList() {
+		pokemonsList() {
 			return getters.pokemonsInfo;
 		},
 		isSearching() {

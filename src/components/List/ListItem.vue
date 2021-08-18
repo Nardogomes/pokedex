@@ -1,6 +1,6 @@
 <template>
-	<li>
-		<img :src="sprite" alt="name" class="sprite" />
+	<li class="list__item">
+		<img :src="sprite" :alt="name" class="sprite" />
 		<div class="informations">
 			<h3 class="identification">
 				<span class="id">#{{ id }}</span>
